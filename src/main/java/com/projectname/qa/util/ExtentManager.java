@@ -17,13 +17,13 @@ public class ExtentManager {
         if (extent == null) {
         	if (TestBase.GlobalExtentReportsOverWrite)
         	{
-        		extent = new ExtentReports(filePath, true, DisplayOrder.OLDEST_FIRST, NetworkMode.OFFLINE);
+        		extent = new ExtentReports(filePath, true, DisplayOrder.OLDEST_FIRST);
         		System.out.println(filePath);
         		System.out.println("inside true");
         	}
         	else
         	{
-        		extent = new ExtentReports(filePath, false, DisplayOrder.OLDEST_FIRST, NetworkMode.OFFLINE);
+        		extent = new ExtentReports(filePath, false, DisplayOrder.OLDEST_FIRST);
         		System.out.println("inside false");
         	}
         	extent
