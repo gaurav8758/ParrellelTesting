@@ -125,7 +125,7 @@
 					<!-- <threadCount>3</threadCount> -->
 					
 	                <forkCount>3</forkCount>
-	                <reuseForks>false</reuseForks>
+	                <reuseForks>true</reuseForks>
 		
 					<systemPropertyVariables>
 						<!-- Environment parameters -->
