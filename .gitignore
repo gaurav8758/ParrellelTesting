@@ -1,3 +1,9 @@
 
 target/surefire-reports/2017-10-16T16-20-42_493-jvmRun1.dump
 target/surefire-reports/2017-10-16T16-20-42_493-jvmRun1.dumpstream
+target/classes/com/projectname/qa/config/testng.xml
+target/classes/com/projectname/qa/config/testng.xml
+target/test-classes/com/projectname/qa/testcases/ContactsTest.class
+target/classes/com/projectname/qa/config/testng.xml
+target/classes/com/projectname/qa/config/testng.xml
+target/test-classes/com/projectname/qa/testcases/ContactsTest.class
