@@ -124,15 +124,6 @@
 					<parallel>classes</parallel>
 					<threadCount>3</threadCount>
 		
-					<properties>
-                        <property>
-                          <name>listener</name>
-                          <value>com.projectname.qa.util.WebDriverListener</value>
-                        </property>
-                    </properties>
-
-					<groups>Testing</groups> 
-
 					<systemPropertyVariables>
 						<!-- Environment parameters -->
                         <browserName>Chrome</browserName>
@@ -142,6 +133,21 @@
 						<extentReportsOverwrite>true</extentReportsOverwrite>                
 						<extentReportsLocation>C:\\Automation_Framework\\Reports\\ExtentReport.html</extentReportsLocation>                
                     </systemPropertyVariables>
+
+					<!--
+					<properties>
+                        <property>
+                          <name>listener</name>
+                          <value>com.projectname.qa.util.WebDriverListener</value>
+                        </property>
+                    </properties>
+
+					 <groups>Testing</groups>  -->
+					
+					<suiteXmlFiles>
+            				<suiteXmlFile>com\projectname\qa\config\testng.xml</suiteXmlFile>
+          			</suiteXmlFiles>
+
 				</configuration>
 			</plugin>
 		</plugins>
