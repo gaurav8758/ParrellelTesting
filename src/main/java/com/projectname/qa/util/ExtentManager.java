@@ -5,6 +5,7 @@ import java.io.File;
 import com.projectname.qa.base.TestBase;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.NetworkMode;
 
 public class ExtentManager {
     static ExtentReports extent;
@@ -16,13 +17,13 @@ public class ExtentManager {
         if (extent == null) {
         	if (TestBase.GlobalExtentReportsOverWrite)
         	{
-        		extent = new ExtentReports(filePath, true, DisplayOrder.OLDEST_FIRST);
+        		extent = new ExtentReports(filePath, true, DisplayOrder.OLDEST_FIRST, NetworkMode.OFFLINE);
         		System.out.println(filePath);
         		System.out.println("inside true");
         	}
         	else
         	{
-        		extent = new ExtentReports(filePath, false, DisplayOrder.OLDEST_FIRST);
+        		extent = new ExtentReports(filePath, false, DisplayOrder.OLDEST_FIRST, NetworkMode.OFFLINE);
         		System.out.println("inside false");
         	}
         	extent
