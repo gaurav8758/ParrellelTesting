@@ -123,7 +123,12 @@
 				<configuration>
 					<!--<parallel>classes</parallel>
 					 <threadCount>3</threadCount> -->
-		
+	                 <forkCount>${acceptance.test.parallel.count}</forkCount>
+	                 <reuseForks>true</reuseForks>
+	                 <includes>
+	                 	<include>**/*Test.class</include>
+	                 </includes>
+                 
 					<systemPropertyVariables>
 						<!-- Environment parameters -->
                         <browserName>Chrome</browserName>
@@ -134,7 +139,7 @@
 						<extentReportsLocation>C:\\Automation_Framework\\Reports\\ExtentReport.html</extentReportsLocation>                
                     </systemPropertyVariables>
 
-					<!--
+					
 					<properties>
                         <property>
                           <name>listener</name>
@@ -142,11 +147,11 @@
                         </property>
                     </properties>
 
-					 <groups>Testing</groups>  -->
+					<!--  <groups>Testing</groups>  -->
 					
-					<suiteXmlFiles>
+<!-- 					<suiteXmlFiles>
             				<suiteXmlFile>src\main\java\com\projectname\qa\config\testng.xml</suiteXmlFile>
-          			</suiteXmlFiles>
+          			</suiteXmlFiles> -->
 
 				</configuration>
 			</plugin>
