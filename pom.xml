@@ -121,11 +121,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20.1</version> <!-- <version>2.19</version> -->
 				<configuration>
-					<parallel>classes</parallel>
-					<!-- <threadCount>3</threadCount> -->
-					
-	                <forkCount>3</forkCount>
-	                <reuseForks>true</reuseForks>
+					<!--<parallel>classes</parallel>
+					 <threadCount>3</threadCount> -->
 		
 					<systemPropertyVariables>
 						<!-- Environment parameters -->
