@@ -27,6 +27,7 @@ public class ContactsTest extends TestBase {
 		super();
 	}
 	
+	
 	//@BeforeMethod
 	public void setup() throws InterruptedException{
 		driver = getDriver();
