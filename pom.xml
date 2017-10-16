@@ -146,9 +146,9 @@
 
 					<!--  <groups>Testing</groups>  -->
 					
-<!-- 					<suiteXmlFiles>
+ 					<suiteXmlFiles>
             				<suiteXmlFile>src\main\java\com\projectname\qa\config\testng.xml</suiteXmlFile>
-          			</suiteXmlFiles> -->
+          			</suiteXmlFiles>
 
 				</configuration>
 			</plugin>

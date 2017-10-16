@@ -11,11 +11,11 @@
 	 	<parameter name="URL" value="http://freecrm.com/index.html" />
 	 	<parameter name="extentReportsOverwrite" value="true" />
 	 	<parameter name="extentReportsLocation" value="C:\Automation_Framework\Reports\ExtentReport.html" />
- -->		 
+		 
  		<classes>
 		 	<class name="com.projectname.qa.testcases.LoginTest" />
  		 	<class name="com.projectname.qa.testcases.HomeTest" />
 		 	<class name="com.projectname.qa.testcases.ContactsTest" />
-		 </classes>
+		 </classes> -->
 	 </test>
 </suite>
