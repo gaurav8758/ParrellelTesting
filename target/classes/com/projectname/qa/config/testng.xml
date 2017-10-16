@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParrellelExecutionFramework" parallel="classes" thread-count="3">
+<!-- <parallel="classes" thread-count="3" -->
+ 	<listeners>
+	<listener class-name="com.projectname.qa.util.WebDriverListener"></listener>
+	</listeners> 
+
+	 <test name="Test" >
+	 	<parameter name="browserName" value="chrome" />
+	 	<parameter name="URL" value="http://freecrm.com/index.html" />
+	 	<parameter name="extentReportsOverwrite" value="true" />
+	 	<parameter name="extentReportsLocation" value="C:\Automation_Framework\Reports\ExtentReport.html" />
+		 <classes>
+		 	<class name="com.projectname.qa.testcases.LoginTest" />
+ 		 	<class name="com.projectname.qa.testcases.HomeTest" />
+		 	<class name="com.projectname.qa.testcases.ContactsTest" />
+		 </classes>
+	 </test>
+</suite>
