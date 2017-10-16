@@ -35,13 +35,13 @@ public class LoginTest extends TestBase{
 		Assert.assertEquals(PageTitle, "#1 Free CRM for Any Business: Online Customer Relationship Software");
 	}
 	
-	@Test(priority=1, groups="FREECRM",enabled=false)
+	@Test(priority=1, groups="FREECRM")
 	public void Logon_CRMLogoImageTest(){
 		setup();
 		Assert.assertTrue(loginPage.validateCRMImage());
 	}
 	
-	@Test(priority=1, groups="FREECRM",enabled=false)
+	@Test(priority=1, groups="FREECRM")
 	public void Logon_ValidCredentialsTest() throws InterruptedException{
 		setup();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));

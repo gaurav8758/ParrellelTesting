@@ -124,7 +124,7 @@
 					<!--<parallel>classes</parallel>
 					 <threadCount>3</threadCount> -->
 	                 <forkCount>${acceptance.test.parallel.count}</forkCount>
-	                 <reuseForks>true</reuseForks>
+	                 <reuseForks>false</reuseForks>
 	                 <includes>
 	                 	<include>**/*Test.class</include>
 	                 </includes>
