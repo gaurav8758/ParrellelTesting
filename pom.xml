@@ -121,10 +121,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20.1</version> <!-- <version>2.19</version> -->
 				<configuration>
-					<parallel>methods</parallel>
-					 <!--<threadCount>3</threadCount> -->
-	                 <forkCount>${acceptance.test.parallel.count}</forkCount>
-	                 <reuseForks>false</reuseForks>
+					<!-- <parallel>methods</parallel> -->
+
 	                 <includes>
 	                 	<include>**/*Test.class</include>
 	                 </includes>
@@ -139,7 +137,6 @@
 						<extentReportsLocation>C:\\Automation_Framework\\Reports\\ExtentReport.html</extentReportsLocation>                
                     </systemPropertyVariables>
 
-					
 					<properties>
                         <property>
                           <name>listener</name>
