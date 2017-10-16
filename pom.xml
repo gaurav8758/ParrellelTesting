@@ -126,7 +126,7 @@
 					
 	                <perCoreThreadCount>false</perCoreThreadCount>
 	                <useUnlimitedThreads>true</useUnlimitedThreads>
-	                <threadCountClasses>1</threadCountClasses>
+	                <threadCountClasses>${thread.count.classes}</threadCountClasses>
 	                <!-- Only use 1 JVM instance for all tests -->
 	                <forkCount>1</forkCount>
 	                <reuseForks>true</reuseForks>
