@@ -9,8 +9,8 @@ import com.relevantcodes.extentreports.NetworkMode;
 
 public class ExtentManager {
     static ExtentReports extent;
-    //final static String filePath = System.getProperty("user.dir") + "\\test-output\\ExtentReport.html";
-    final static String filePath = TestBase.GlobalExtentReportsLocation;
+    final static String filePath = System.getProperty("user.dir") + "\\test-output\\ExtentReport.html";
+    //final static String filePath = TestBase.GlobalExtentReportsLocation;
     
     public synchronized static ExtentReports getReporter() {
     	//System.out.println("filepath:" + filePath);
