@@ -12,10 +12,13 @@
 	 	<parameter name="extentReportsOverwrite" value="true" />
 	 	<parameter name="extentReportsLocation" value="C:\Automation_Framework\Reports\ExtentReport.html" />
 		 -->
- 		<classes>
+		<packages>
+	      <package name=".*" />
+	    </packages>
+ <!--		<classes>
 		 	<class name="com.projectname.qa.testcases.*Test" />
-<!--  		 	<class name="com.projectname.qa.testcases.HomeTest" />
-		 	<class name="com.projectname.qa.testcases.ContactsTest" /> -->
-		 </classes> 
+  		 	<class name="com.projectname.qa.testcases.HomeTest" />
+		 	<class name="com.projectname.qa.testcases.ContactsTest" />
+		 </classes>  -->
 	 </test>
 </suite>
