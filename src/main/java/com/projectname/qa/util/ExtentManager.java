@@ -20,7 +20,7 @@ public class ExtentManager {
         	if (TestBase.GlobalExtentReportsOverWrite)
         	{
         		extent = new ExtentReports(filePath.toString(), true, DisplayOrder.OLDEST_FIRST);
-        		System.out.println(filePath);
+        		System.out.println(filePath.toString());
         		System.out.println("inside true");
         	}
         	else
