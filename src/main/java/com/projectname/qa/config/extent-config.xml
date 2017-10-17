@@ -14,10 +14,10 @@
     <protocol>https</protocol>
     
     <!-- title of the document -->
-    <documentTitle>ExtentReports 2.0</documentTitle>
+    <documentTitle>Automation Regression - Continous Integration</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName></reportName>
+    <reportName>Automation Regression</reportName>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
     <reportHeadline>Automation Report</reportHeadline>
