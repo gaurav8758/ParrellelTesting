@@ -11,16 +11,16 @@ import com.relevantcodes.extentreports.ExtentReports;
 public class ExtentManager {
     static ExtentReports extent;
     //final static String filePath = System.getProperty("user.dir") + "\\test-output\\ExtentReport.html";
-    static Path filePath;
+    final static Path filePath = Paths.get(TestBase.GlobalExtentReportsLocation);
     
     public synchronized static ExtentReports getReporter() {
     	//System.out.println("filepath:" + filePath);
-    	filePath = Paths.get(TestBase.GlobalExtentReportsLocation);
+    	//filePath = Paths.get(TestBase.GlobalExtentReportsLocation);
+    	System.out.println(filePath.toString());
         if (extent == null) {
         	if (TestBase.GlobalExtentReportsOverWrite)
         	{
         		extent = new ExtentReports(filePath.toString(), true, DisplayOrder.OLDEST_FIRST);
-        		System.out.println(filePath.toString());
         		System.out.println("inside true");
         	}
         	else
@@ -34,7 +34,6 @@ public class ExtentManager {
             .addSystemInfo("User Name", System.getProperty("user.name"));
             
     		extent.loadConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\com\\projectname\\qa\\config\\extent-config.xml"));
-    		System.out.println(new File(System.getProperty("user.dir") + "\\src\\main\\java\\com\\projectname\\qa\\config\\extent-config.xml"));
         }
         
         return extent;
