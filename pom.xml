@@ -97,12 +97,12 @@
                  
 					<systemPropertyVariables>
 						<!-- Environment parameters -->
-                        <browserName>Chrome</browserName>
-                        <URL>http://freecrm.com/index.html</URL>
+                        <browserName>${browserName}</browserName>
+                        <URL>${URL}</URL>
 
 						<!-- Reports parameters -->
-						<extentReportsOverwrite>true</extentReportsOverwrite>                
-						<extentReportsLocation>C:\\Automation_Framework\\Reports\\ExtentReport.html</extentReportsLocation>                
+						<extentReportsOverwrite>${extentReportsOverwrite}</extentReportsOverwrite>                
+						<extentReportsLocation>${extentReportsLocation}</extentReportsLocation>                
                     </systemPropertyVariables>
 
 					<properties>
