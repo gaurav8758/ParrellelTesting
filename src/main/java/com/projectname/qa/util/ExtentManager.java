@@ -34,6 +34,7 @@ public class ExtentManager {
             .addSystemInfo("User Name", System.getProperty("user.name"));
             
     		extent.loadConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\com\\projectname\\qa\\config\\extent-config.xml"));
+    		System.out.println(new File(System.getProperty("user.dir") + "\\src\\main\\java\\com\\projectname\\qa\\config\\extent-config.xml"));
         }
         
         return extent;
