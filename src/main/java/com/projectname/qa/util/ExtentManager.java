@@ -11,11 +11,9 @@ import com.relevantcodes.extentreports.ExtentReports;
 public class ExtentManager {
     static ExtentReports extent;
     //final static String filePath = System.getProperty("user.dir") + "\\test-output\\ExtentReport.html";
-    final static Path filePath = Paths.get("C:\\Automation_Framework\\Reports3\\EntentReports.html");
+    final static Path filePath = Paths.get(TestBase.GlobalExtentReportsLocation);
     
     public synchronized static ExtentReports getReporter() {
-    	//System.out.println("filepath:" + filePath);
-    	//filePath = Paths.get(TestBase.GlobalExtentReportsLocation);
     	System.out.println(filePath.toString());
         if (extent == null) {
         	if (TestBase.GlobalExtentReportsOverWrite)
