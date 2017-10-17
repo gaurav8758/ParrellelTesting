@@ -3,6 +3,7 @@
 <suite name="ParrellelExecutionFramework" parallel="classes">
  	<listeners>
 		<listener class-name="com.projectname.qa.util.WebDriverListener"></listener>
+		<listener class-name="com.projectname.qa.util.RetryListener"/>
 	</listeners> 
 
 	 <test name="Test" >

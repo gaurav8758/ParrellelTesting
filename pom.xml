@@ -139,7 +139,7 @@
 					<properties>
                         <property>
                           <name>listener</name>
-                          <value>com.projectname.qa.util.WebDriverListener</value>
+                          <value>com.projectname.qa.util.WebDriverListener,com.projectname.qa.util.RetryListener</value>
                         </property>
                     </properties>
 					
