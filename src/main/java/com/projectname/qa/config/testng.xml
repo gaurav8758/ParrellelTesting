@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ParrellelExecutionFramework" parallel="classes">
- 	<listeners>
+ <!-- 	<listeners>
 		<listener class-name="com.projectname.qa.util.WebDriverListener"></listener>
 		<listener class-name="com.projectname.qa.util.RetryListener"/>
-	</listeners> 
+	</listeners>  -->
 
 	 <test name="Test" >
 		<packages>
