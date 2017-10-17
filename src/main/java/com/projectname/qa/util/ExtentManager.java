@@ -5,7 +5,6 @@ import java.io.File;
 import com.projectname.qa.base.TestBase;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.NetworkMode;
 
 public class ExtentManager {
     static ExtentReports extent;

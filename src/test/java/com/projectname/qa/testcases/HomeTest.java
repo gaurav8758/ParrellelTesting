@@ -3,7 +3,6 @@ package com.projectname.qa.testcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 import com.projectname.qa.base.TestBase;
