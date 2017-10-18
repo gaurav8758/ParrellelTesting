@@ -11,3 +11,4 @@ target/classes/com/projectname/qa/base/TestBase.class
 target/classes/com/projectname/qa/util/ExtentManager.class
 target/classes/com/projectname/qa/util/LocalDriverFactory.class
 *.class
+*.class

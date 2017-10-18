@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.projectname.qa.base.TestBase;
 import com.projectname.qa.util.ExtentTestManager;
+import com.projectname.qa.util.GetScreenShot;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class HomePage extends TestBase{
@@ -31,6 +32,11 @@ public class HomePage extends TestBase{
 	public HomePage(WebDriver Tdriver){
 		driver = Tdriver;
 		ExtentTestManager.getTest().log(LogStatus.PASS, "<FONT COLOR ='BLUE'><B>HOME PAGE</B></FONT>");
+		if (!usernameLabel.isDisplayed())
+		{
+			ExtentTestManager.getTest().log(LogStatus.FAIL, "<FONT COLOR ='RED'>Unsucessful Login</FONT>", "Home Page is displayed. User might have not logged in" + ExtentTestManager.getTest().addScreenCapture(GetScreenShot.capture(driver, "screenShotName")));
+			//ExtentTestManager.getTest().log(LogStatus.FAIL, "<FONT COLOR ='RED'>Home Page is displayed. User might have not logged in</FONT>");
+		}
 	}
 	
 	//Actions:
