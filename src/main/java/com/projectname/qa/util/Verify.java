@@ -25,12 +25,7 @@ public class Verify extends Assertion
 		}
 		catch(AssertionError ex)
 		{
-          	try {
 				ExtentTestManager.getTest().log(LogStatus.FAIL, "Condition", "Condition not met.: " + ExtentTestManager.getTest().addScreenCapture(GetScreenShot.capture(driver, "screenShotName")));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 	}
 	
@@ -43,12 +38,7 @@ public class Verify extends Assertion
 		}
 		catch(AssertionError ex)
 		{
-			try {
 				ExtentTestManager.getTest().log(LogStatus.FAIL, message, "Condition not met.: " + ExtentTestManager.getTest().addScreenCapture(GetScreenShot.capture(driver, "screenShotName")));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 
 	}	
@@ -62,12 +52,7 @@ public class Verify extends Assertion
 		}
 		catch(AssertionError ex)
 		{
-	    	try {
 				ExtentTestManager.getTest().log(LogStatus.FAIL, "Condition: ", "Condition not met.: " + ExtentTestManager.getTest().addScreenCapture(GetScreenShot.capture(driver, "screenShotName")));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 	}
 	
@@ -80,12 +65,7 @@ public class Verify extends Assertion
 		}
 		catch(AssertionError ex)
 		{
-	    	try {
 				ExtentTestManager.getTest().log(LogStatus.FAIL, message, "Condition not met.: " + ExtentTestManager.getTest().addScreenCapture(GetScreenShot.capture(driver, "screenShotName")));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 
 	}	
