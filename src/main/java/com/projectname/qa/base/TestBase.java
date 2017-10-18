@@ -38,6 +38,7 @@ public class TestBase {
 	public static String GlobalURL;
 	public static boolean GlobalExtentReportsOverWrite=false;
 	public static String GlobalExtentReportsLocation="C:\\Automation_Framework\\Reports\\ExtentReport.html";
+	public static String GlobaldriverLocation;
 	
 	public static ExtentReports extent;
 	public static ExtentTest test;
@@ -77,14 +78,16 @@ public class TestBase {
 		return driver;
     }
 
-    @Parameters({ "URL", "browserName", "extentReportsOverwrite","extentReportsLocation"})
+    @Parameters({ "URL", "browserName", "extentReportsOverwrite","extentReportsLocation", "driverLocation"})
     @BeforeMethod(alwaysRun=true)
-    public void beforeMethod(String URL, String browserName, boolean extentReportsOverwrite, String extentReportsLocation, Method method) {
+    public void beforeMethod(String URL, String browserName, boolean extentReportsOverwrite, String extentReportsLocation, 
+    						String driverLocation,Method method) {
     	//System.out.println("beforemethod called");
     	GlobalBrowser = browserName;
     	GlobalURL = URL;
     	GlobalExtentReportsOverWrite = Boolean.valueOf(extentReportsOverwrite);
     	GlobalExtentReportsLocation = extentReportsLocation;
+    	GlobaldriverLocation = driverLocation;
         ExtentTestManager.startTest(method.getName());
     }
     	

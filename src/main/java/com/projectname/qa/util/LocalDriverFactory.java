@@ -4,6 +4,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import com.projectname.qa.base.TestBase;
+
 public class LocalDriverFactory {
     static synchronized WebDriver createInstance(String browserName) {
         WebDriver driver = null;
@@ -16,7 +18,7 @@ public class LocalDriverFactory {
             return driver;
         }
         if (browserName.toLowerCase().contains("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Automation_Framework\\Drivers\\chromedriver_win32\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", TestBase.GlobaldriverLocation + "\\chromedriver.exe");	
             driver = new ChromeDriver();
             return driver;
         }

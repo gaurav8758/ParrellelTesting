@@ -11,13 +11,13 @@ import com.relevantcodes.extentreports.ExtentReports;
 public class ExtentManager {
     static ExtentReports extent;
     //final static String filePath = System.getProperty("user.dir") + "\\test-output\\ExtentReport.html";
-    final static Path filePath = Paths.get(TestBase.GlobalExtentReportsLocation);
+    final static Path filePath = Paths.get(TestBase.GlobalExtentReportsLocation + "\\ExtentReport.html");
     
     public synchronized static ExtentReports getReporter() {
-    	System.out.println(filePath.toString());
         if (extent == null) {
         	if (TestBase.GlobalExtentReportsOverWrite)
         	{
+        		System.out.println("Results File Location: " + filePath.toString());
         		extent = new ExtentReports(filePath.toString(), true, DisplayOrder.OLDEST_FIRST);
         		System.out.println("inside true");
         	}
