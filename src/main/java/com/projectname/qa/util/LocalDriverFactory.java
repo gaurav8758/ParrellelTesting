@@ -22,6 +22,11 @@ public class LocalDriverFactory {
             driver = new ChromeDriver();
             return driver;
         }
+        if (browserName.toLowerCase().contains("chrome_mac")) {
+			System.setProperty("webdriver.chrome.driver", TestBase.GlobaldriverLocation + "\\chromedriver_mac");	
+            driver = new ChromeDriver();
+            return driver;
+        }
         return driver;
     }
 }
