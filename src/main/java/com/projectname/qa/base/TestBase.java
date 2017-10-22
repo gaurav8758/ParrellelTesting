@@ -84,6 +84,9 @@ public class TestBase {
     @BeforeSuite(alwaysRun=true)
     public void beforeSuite(String platform) {
     	Globalplatform = platform;
+    	if (platform.equalsIgnoreCase("mobile")){
+    		
+    	}
 	}
 
     @Parameters({ "URL", "browserName", "extentReportsOverwrite","extentReportsLocation", "driverLocation"})
