@@ -81,6 +81,11 @@
 	  <version>2.20.1</version>
 	  <type>maven-plugin</type>
 	</dependency>
+	<dependency>
+	    <groupId>io.appium</groupId>
+	    <artifactId>java-client</artifactId>
+	    <version>4.1.2</version>
+	</dependency>
   </dependencies>
   
 	<build>
@@ -103,7 +108,8 @@
 						<!-- Reports parameters -->
 						<extentReportsOverwrite>${extentReportsOverwrite}</extentReportsOverwrite>                
 						<extentReportsLocation>${extentReportsLocation}</extentReportsLocation>   
-						<driverLocation>${driverLocation}</driverLocation>              
+						<driverLocation>${driverLocation}</driverLocation> 
+						<platform>${platform}</platform>              
                     </systemPropertyVariables>
 
 					<properties>

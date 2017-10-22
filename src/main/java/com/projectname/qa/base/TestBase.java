@@ -18,6 +18,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import com.projectname.qa.util.ExtentManager;
@@ -39,6 +40,7 @@ public class TestBase {
 	public static boolean GlobalExtentReportsOverWrite=false;
 	public static String GlobalExtentReportsLocation="C:\\Automation_Framework\\Reports\\ExtentReport.html";
 	public static String GlobaldriverLocation;
+	public static String Globalplatform;
 	
 	public static ExtentReports extent;
 	public static ExtentTest test;
@@ -77,6 +79,12 @@ public class TestBase {
         driver.get(GlobalURL);
 		return driver;
     }
+    
+    @Parameters({"platform"})
+    @BeforeSuite(alwaysRun=true)
+    public void beforeSuite(String platform) {
+    	Globalplatform = platform;
+	}
 
     @Parameters({ "URL", "browserName", "extentReportsOverwrite","extentReportsLocation", "driverLocation"})
     @BeforeMethod(alwaysRun=true)
