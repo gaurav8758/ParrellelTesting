@@ -36,35 +36,35 @@ public class HomeTest extends TestBase {
 		ExtentTestManager.getTest().log(LogStatus.PASS, "<font color=GREEN><B>Setup Completed</B></font>");
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Home_verifyHomePageTitleTest() throws InterruptedException{
 		setup();
 		String PageTitle = homePage.getHomePageTitle();
 		Assert.assertEquals(PageTitle, "CRMPRO","Home Page title not matched");
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Home_verifyUsernameTest() throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);
 		Assert.assertTrue(homePage.verifyCorrectUsername(), "Username is not correct");
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Home_verifyContactsLinkTest() throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);
 		contactsPage = homePage.clickonContactsLink();
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Home_verifyDealsLinkTest() throws InterruptedException{
 		setup();		
 		TestUtil.switchToFrame(driver);
 		dealsPage = homePage.clickonDealsLink();
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Home_verifyTasksLinkTest() throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);

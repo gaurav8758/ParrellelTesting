@@ -95,10 +95,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20.1</version> 
 				<configuration>
-
-	                 <includes>
-	                 	<include>**/*Test.class</include>
-	                 </includes>
                  
 					<systemPropertyVariables>
 						<!-- Environment parameters -->
@@ -119,7 +115,7 @@
                         </property>
                     </properties>
 					
-					<groups>Testing</groups>
+					<groups>${groups}</groups>
 					
  					<suiteXmlFiles>
             				<suiteXmlFile>src\main\java\com\projectname\qa\config\testng.xml</suiteXmlFile>
