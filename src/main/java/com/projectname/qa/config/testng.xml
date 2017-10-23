@@ -6,13 +6,7 @@
 		<listener class-name="com.projectname.qa.util.RetryListener"/>
 	</listeners>  -->
 
-	 <test name="Test" >
-		<groups>
-			<run>
-				<include name="Testing" />
-			</run>
-		</groups>
-		
+	 <test name="Test" >		
 		<packages>
 	      <package name=".*" />
 	    </packages>
