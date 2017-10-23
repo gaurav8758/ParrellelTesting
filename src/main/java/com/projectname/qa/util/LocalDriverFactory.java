@@ -53,8 +53,8 @@ public class LocalDriverFactory {
 	        	capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
 	        	capabilities.setCapability("platformName", "Android");
 	        	//capabilities.setCapability("app", app.getAbsolutePath());
-	        	capabilities.setCapability("appPackage", "com.android.calculator2");
-	        	capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
+	        	capabilities.setCapability("appPackage", "com.google.android.calculator2");
+	        	capabilities.setCapability("appActivity", "com.google.android.calculator2.Calculator");
 	        	
 	        	try 
 		        	{	
