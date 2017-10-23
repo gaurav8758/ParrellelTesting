@@ -115,7 +115,7 @@
                         </property>
                     </properties>
 					
-					<groups>${groups}</groups>
+<!-- 					<groups>${groups}</groups> -->
 					
  					<suiteXmlFiles>
             				<suiteXmlFile>src\main\java\com\projectname\qa\config\testng.xml</suiteXmlFile>
