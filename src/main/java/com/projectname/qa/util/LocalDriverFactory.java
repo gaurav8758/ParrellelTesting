@@ -45,16 +45,16 @@ public class LocalDriverFactory {
         {
         	if (browserName.toLowerCase().contains("android"))
         	{
-        		File app = new File("C:\\Automation_Framework\\apps\\WhatsApp_com.whatsapp.apk");
+        		//File app = new File("C:\\Automation_Framework\\apps\\WhatsApp_com.whatsapp.apk");
 	        	
         		DesiredCapabilities capabilities = new DesiredCapabilities();
 	        	capabilities.setCapability("deviceName", "Nexus 5");
 	        	capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
 	        	capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
 	        	capabilities.setCapability("platformName", "Android");
-	        	capabilities.setCapability("app", app.getAbsolutePath());
-	        	//capabilities.setCapability("appPackage", "com.android.calculator2");
-	        	//capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
+	        	//capabilities.setCapability("app", app.getAbsolutePath());
+	        	capabilities.setCapability("appPackage", "com.android.calculator2");
+	        	capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
 	        	
 	        	try 
 		        	{	
