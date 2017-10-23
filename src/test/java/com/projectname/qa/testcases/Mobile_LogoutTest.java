@@ -11,12 +11,12 @@ import com.projectname.qa.pages.LoginPage;
 import com.projectname.qa.util.ExtentTestManager;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class MobileTest extends TestBase{
+public class Mobile_LogoutTest extends TestBase{
 	WebDriver driver;
 	//LoginPage loginPage;
 	//HomePage homePage;
 
-	public MobileTest(){
+	public Mobile_LogoutTest(){
 		super();
 	}
 	
@@ -26,8 +26,23 @@ public class MobileTest extends TestBase{
 		ExtentTestManager.getTest().log(LogStatus.PASS, "<font color=GREEN><B>Setup Completed</B></font>");
 	}
 
-	@Test(priority=1, groups={"Testing","Functional"})
-	public void Logon_PageTitleTest(){
+	@Test(priority=1, groups={"Testing","Mobile"})
+	public void Mobile_Logout_Test001(){
+		setup();
+		//String PageTitle = loginPage.getLoginPageTitle();
+	}
+	@Test(priority=1, groups={"Testing","Mobile"})
+	public void Mobile_Logout_Test002(){
+		setup();
+		//String PageTitle = loginPage.getLoginPageTitle();
+	}
+	@Test(priority=1, groups={"Testing","Mobile"})
+	public void Mobile_Logout_Test003(){
+		setup();
+		//String PageTitle = loginPage.getLoginPageTitle();
+	}
+	@Test(priority=1, groups={"Testing","Mobile"})
+	public void Mobile_Logout_Test004(){
 		setup();
 		//String PageTitle = loginPage.getLoginPageTitle();
 	}
