@@ -1,5 +1,6 @@
 package com.projectname.qa.testcases;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -30,21 +31,6 @@ public class Mobile_LoginTest extends TestBase{
 	public void Mobile_Login_Test001(){
 		setup();
 		//String PageTitle = loginPage.getLoginPageTitle();
+		driver.findElement(By.id("com.whatsapp:id/eula_accept")).click();
 	}
-	@Test(priority=1, groups={"Testing","Mobile"})
-	public void Mobile_LoginTest002(){
-		setup();
-		//String PageTitle = loginPage.getLoginPageTitle();
-	}
-	@Test(priority=1, groups={"Testing","Mobile"})
-	public void Mobile_Login_Test003(){
-		setup();
-		//String PageTitle = loginPage.getLoginPageTitle();
-	}
-	@Test(priority=1, groups={"Testing","Mobile"})
-	public void Mobile_Login_Test004(){
-		setup();
-		//String PageTitle = loginPage.getLoginPageTitle();
-	}
-	
 }

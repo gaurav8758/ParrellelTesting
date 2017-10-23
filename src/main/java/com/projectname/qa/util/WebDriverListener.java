@@ -37,7 +37,7 @@ public class WebDriverListener implements IInvokedMethodListener {
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         if (method.isTestMethod()) {
             WebDriver driver = LocalDriverManager.getDriver();
-            if (driver != null) {
+            if (null!=driver) {
                 driver.quit();
             }
             ExtentTestManager.getTest().log(LogStatus.PASS, "The browser is closed.");
