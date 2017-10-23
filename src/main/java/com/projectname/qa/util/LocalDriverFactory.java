@@ -49,8 +49,7 @@ public class LocalDriverFactory {
 	        	
         		DesiredCapabilities capabilities = new DesiredCapabilities();
 	        	capabilities.setCapability("deviceName", "Nexus 5");
-	        	capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
-	        	capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
+	        	capabilities.setCapability("platformVersion", "6.0.1");
 	        	capabilities.setCapability("platformName", "Android");
 	        	//capabilities.setCapability("app", app.getAbsolutePath());
 	        	capabilities.setCapability("appPackage", "com.google.android.calculator2");
