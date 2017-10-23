@@ -7,6 +7,12 @@
 	</listeners>  -->
 
 	 <test name="Test" >
+		<groups>
+			<run>
+				<include name="Testing" />
+			</run>
+		</groups>
+		
 		<packages>
 	      <package name=".*" />
 	    </packages>

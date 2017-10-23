@@ -44,22 +44,22 @@ public class LocalDriverFactory {
         {
         	if (browserName.toLowerCase().contains("android"))
         	{
-        	DesiredCapabilities capabilities = new DesiredCapabilities();
-        	capabilities.setCapability("deviceName", "XT1562");
-        	capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
-        	capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
-        	capabilities.setCapability("platformName", "Android");
-        	capabilities.setCapability("appPackage", "com.android.calculator2");
-        	capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
-        	try 
-	        	{	
-					driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-				} catch (MalformedURLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+	        	DesiredCapabilities capabilities = new DesiredCapabilities();
+	        	capabilities.setCapability("deviceName", "LG Nexus 5");
+	        	capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
+	        	capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
+	        	capabilities.setCapability("platformName", "Android");
+	        	capabilities.setCapability("appPackage", "com.android.calculator2");
+	        	capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
+	        	try 
+		        	{	
+						driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+					} catch (MalformedURLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+        		}
         	}
-        }
         return driver;
     }
 }

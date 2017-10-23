@@ -26,20 +26,20 @@ public class LoginTest extends TestBase{
 		ExtentTestManager.getTest().log(LogStatus.PASS, "<font color=GREEN><B>Setup Completed</B></font>");
 	}
 
-	@Test(priority=1, groups={"FREECRM","Testing"})
+	@Test(priority=1, groups={"Testing","Functional"})
 	public void Logon_PageTitleTest(){
 		setup();
 		String PageTitle = loginPage.getLoginPageTitle();
 		Assert.assertEquals(PageTitle, "#1 Free CRM for Any Business: Online Customer Relationship Software");
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Logon_CRMLogoImageTest(){
 		setup();
 		Assert.assertTrue(loginPage.validateCRMImage());
 	}
 	
-	@Test(priority=1, groups="FREECRM")
+	@Test(priority=1, groups={"FREECRM","Functional"})
 	public void Logon_ValidCredentialsTest() throws InterruptedException{
 		setup();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
