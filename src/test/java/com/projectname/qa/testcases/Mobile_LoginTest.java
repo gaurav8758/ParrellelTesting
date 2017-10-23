@@ -37,6 +37,7 @@ public class Mobile_LoginTest extends TestBase{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("After sleep command");
 		driver.findElement(By.id("com.whatsapp:id/eula_accept")).click();
 	}
 }
