@@ -36,7 +36,7 @@ public class ContactsTest extends TestBase {
 		ExtentTestManager.getTest().log(LogStatus.PASS, "<font color=GREEN><B>Setup Completed</B></font>");
 	}
 	
-	@Test(priority = 1,enabled = true, groups={"FREECRM","Functional"})
+	@Test(priority = 1,enabled = false, groups={"FREECRM","Functional"})
 	public void Contacts_verifyContactsPageLabelTest() throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);
@@ -44,7 +44,7 @@ public class ContactsTest extends TestBase {
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts label is not displayed in the page");
 	}
 	
-	@Test(priority = 2,enabled = true, groups={"FREECRM","Functional"})
+	@Test(priority = 2,enabled = false, groups={"FREECRM","Functional"})
 	public void Contacts_selectSingleContactTest() throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);
@@ -52,7 +52,7 @@ public class ContactsTest extends TestBase {
 		contactsPage.selectContactsByName("David Cris");
 	}
 	
-	@Test(priority = 1,enabled = true, groups={"FREECRM","Functional"})
+	@Test(priority = 1,enabled = false, groups={"FREECRM","Functional"})
 	public void Contacts_selectMultipleContactTest() throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);
@@ -67,7 +67,7 @@ public class ContactsTest extends TestBase {
 		return data;
 	}
 
-	@Test(priority = 2,dataProvider="getCRMTestData", enabled=true, groups={"FREECRM","Functional"})
+	@Test(priority = 2,dataProvider="getCRMTestData", enabled=false, groups={"FREECRM","Functional"})
 	public void Contacts_createNewContactTest(String title, String firstName, String lastName, String company) throws InterruptedException{
 		setup();
 		TestUtil.switchToFrame(driver);

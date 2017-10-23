@@ -2,6 +2,7 @@ package com.projectname.qa.util;
 
 import io.appium.java_client.android.AndroidDriver;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -44,13 +45,17 @@ public class LocalDriverFactory {
         {
         	if (browserName.toLowerCase().contains("android"))
         	{
-	        	DesiredCapabilities capabilities = new DesiredCapabilities();
-	        	capabilities.setCapability("deviceName", "LG Nexus 5");
+        		File app = new File("C:\\Automation_Framework\\apps\\WhatsApp_com.whatsapp.apk");
+	        	
+        		DesiredCapabilities capabilities = new DesiredCapabilities();
+	        	capabilities.setCapability("deviceName", "Nexus 5");
 	        	capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
 	        	capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
 	        	capabilities.setCapability("platformName", "Android");
-	        	capabilities.setCapability("appPackage", "com.android.calculator2");
-	        	capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
+	        	capabilities.setCapability("app", app.getAbsolutePath());
+	        	//capabilities.setCapability("appPackage", "com.android.calculator2");
+	        	//capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
+	        	
 	        	try 
 		        	{	
 						driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
